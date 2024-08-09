@@ -1,30 +1,81 @@
-<!--<< All JS Plugins >>-->
-<script src="{{ asset('assets/js/jquery-3.7.1.min.js') }}"></script>
-<!--<< Viewport Js >>-->
-<script src="{{ asset('assets/js/viewport.jquery.js') }}"></script>
-<!--<< Bootstrap Js >>-->
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<!--<< Gsap Js >>-->
-<script src="{{ asset('assets/js/gsap/gsap.js') }}"></script>
-<script src="{{ asset('assets/js/gsap/gsap-scroll-to-plugin.js') }}"></script>
-<script src="{{ asset('assets/js/gsap/gsap-scroll-trigger.js') }}"></script>
-<!--<< Gsap Split Js >>-->
-<script src="{{ asset('assets/js/gsap/gsap-split-text.js') }}"></script>
-<!--<< Nice Select Js >>-->
-<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-<!--<< Waypoints Js >>-->
-<script src="{{ asset('assets/js/jquery.waypoints.js') }}"></script>
-<!--<< Counterup Js >>-->
-<script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
-<!--<< Swiper Slider Js >>-->
-<script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-<!--<< MeanMenu Js >>-->
-<script src="{{ asset('assets/js/jquery.meanmenu.min.js') }}"></script>
-<!--<< Magnific Popup Js >>-->
-<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-<!--<< Wow Animation Js >>-->
-<script src="{{ asset('assets/js/wow.min.js') }}"></script>
-<!--<< Main.js >>-->
-<script src="{{ asset('assets/js/main.js') }}"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ====== All Scripts -->
+
+<script src="{{ asset('assets/libs/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/theme.js') }}"></script>
+
+
+
+
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+
+      // Testimonial
+      const testimonialSwiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>

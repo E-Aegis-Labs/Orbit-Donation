@@ -1,4 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+const colors = require('tailwindcss/colors')
 import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
@@ -7,12 +8,12 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
-        //updated tailwind
         "./resources/**/*.js",
         "./resources/**/*.vue",
          "./node_modules/flowbite/**/*.js"
     ],
     darkMode: 'class',
+    mode: 'jit',
     theme: {
         fontFamily: {
           satoshi: ['Satoshi', 'sans-serif'],
@@ -246,6 +247,14 @@ export default {
             2: '0px 1px 4px rgba(0, 0, 0, 0.12)',
           },
           keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            },
+            marquee2: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0%)' },
+            },
             linspin: {
               '100%': { transform: 'rotate(360deg)' },
             },
@@ -296,12 +305,16 @@ export default {
             'spin-1.5': 'spin 1.5s linear infinite',
             'spin-2': 'spin 2s linear infinite',
             'spin-3': 'spin 3s linear infinite',
+            marquee: 'marquee 25s linear infinite',
+            marquee2: 'marquee2 25s linear infinite',
           },
         },
       },
-
+    variants: {},
     plugins: [
       forms,
       require('flowbite/plugin')
     ],
+    
 };
+
