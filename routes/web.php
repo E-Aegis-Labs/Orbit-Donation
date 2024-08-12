@@ -4,14 +4,13 @@ use App\Http\Controllers\ProfileController;
 
 use App\Http\Controllers\Shield\ShieldController;
 use App\Http\Controllers\UserPanel\UserPanelController;
-use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
 
 
 Route::get('/', [UserPanelController::class, 'index'])->name('home');
-Route::get('/donation-details', [UserPanelController::class, 'donate'])->name('frontend.layouts.UI.show');
-Route::get('/contact', [UserPanelController::class, 'contact'])->name('frontend.layouts.UI.contact');
+Route::get('/donation-details', [UserPanelController::class, 'donate'])->name('view.layouts.UI.show');
+Route::get('/contact', [UserPanelController::class, 'contact'])->name('view.layouts.UI.contact');
 
 Route::get('/dashboard', [UserPanelController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -52,10 +51,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 
 //volunteer dashboard
-
 Route::middleware(['auth', 'role:volunteer'])->group(function () {
     Route::get(
         '/' . config('app.user_route_prefix') . '/dashboard',
-        [UserController::class, 'index']
+        [UserPanelController::class, 'show']
     )->name('User.dashboard');
 });

@@ -4,10 +4,10 @@
 
 <head>
     <!-- ========== Meta Tags ========== -->
-    @include('frontend.components.meta')
+    @include('view.components.meta')
 
     <!-- All CSS -->
-    @include('frontend.layouts.styles')
+    @include('view.layouts.styles')
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
 
     <!-- Header Section Start -->
-    @include('frontend.layouts.nav')
+    @include('view.layouts.nav')
 
 
     <!-- Search Area Start -->
@@ -234,10 +234,10 @@
 
 
     <!-- Footer Section Start -->
-    @include('frontend.layouts.script_footer')
+    @include('view.layouts.script_footer')
 
     <!-- All Javascripts -->
-    @include('frontend.layouts.scripts')
+    @include('view.layouts.scripts')
 
 </body>
 
