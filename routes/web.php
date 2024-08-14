@@ -47,6 +47,10 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         '/' . config('app.shield_route_prefix') . '/profile/update-password',
         [ShieldController::class, 'updatePassword']
     )->name('Shield.profile.update-password');
+
+
+
+
 });
 
 

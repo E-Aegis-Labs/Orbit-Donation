@@ -97,52 +97,57 @@
 
                                 </form>
 
-                          
+
 
                                 {{-- update password --}}
-    <form method="POST" action="{{ route('Shield.profile.update-password') }}">
-        @csrf
-        @method('PUT')
+                                <form method="POST" action="{{ route('Shield.profile.update-password') }}">
+                                    @csrf
+                                    @method('PUT')
 
-        <div class="mb-5.5">
-            <label for="current_password" class="mb-3 block text-sm font-medium text-black dark:text-white"
-                for="Username">Current Password</label>
-            <input
-                class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                type="password" class="form-control" id="current_password" name="current_password" required />
-        </div>
+                                    <div class="mb-5.5">
+                                        <label for="current_password"
+                                            class="mb-3 block text-sm font-medium text-black dark:text-white"
+                                            for="Username">Current Password</label>
+                                        <input
+                                            class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                                            type="password" class="form-control" id="current_password"
+                                            name="current_password" required />
+                                    </div>
 
-        <div class="mb-5.5">
-            <label for="current_password" class="mb-3 block text-sm font-medium text-black dark:text-white"
-                for="Username">New Password</label>
-            <input
-                class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                type="password" class="form-control" id="password" name="password" required/>
-        </div>
+                                    <div class="mb-5.5">
+                                        <label for="current_password"
+                                            class="mb-3 block text-sm font-medium text-black dark:text-white"
+                                            for="Username">New Password</label>
+                                        <input
+                                            class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                                            type="password" class="form-control" id="password" name="password" required />
+                                    </div>
 
 
-        <div class="mb-5.5">
-            <label for="password_confirmation" class="mb-3 block text-sm font-medium text-black dark:text-white"
-                for="Username">Confirm New Password</label>
-            <input
-                class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
-                type="password" class="form-control" id="password_confirmation" name="password_confirmation" required/>
-        </div>
+                                    <div class="mb-5.5">
+                                        <label for="password_confirmation"
+                                            class="mb-3 block text-sm font-medium text-black dark:text-white"
+                                            for="Username">Confirm New Password</label>
+                                        <input
+                                            class="w-full rounded border border-stroke bg-gray px-4.5 py-3 font-medium text-black focus:border-primary focus-visible:outline-none dark:border-strokedark dark:bg-meta-4 dark:text-white dark:focus:border-primary"
+                                            type="password" class="form-control" id="password_confirmation"
+                                            name="password_confirmation" required />
+                                    </div>
 
-        <div class="flex justify-end gap-4.5">
-            <button
-                class="flex justify-center rounded border border-stroke px-6 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white"
-                type="submit">
-                Cancel
-            </button>
-            <button
-                class="flex justify-center rounded bg-primary px-6 py-2 font-medium text-gray hover:bg-opacity-90"
-                type="submit">
-                Save
-            </button>
-        </div>
-    </form>
-                             
+                                    <div class="flex justify-end gap-4.5">
+                                        <button
+                                            class="flex justify-center rounded border border-stroke px-6 py-2 font-medium text-black hover:shadow-1 dark:border-strokedark dark:text-white"
+                                            type="submit">
+                                            Cancel
+                                        </button>
+                                        <button
+                                            class="flex justify-center rounded bg-primary px-6 py-2 font-medium text-gray hover:bg-opacity-90"
+                                            type="submit">
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -159,7 +164,26 @@
                                     Your Photo
                                 </h3>
                             </div>
-                            <div class="p-7">
+                            <img src="{{ $user->profile_picture ? Storage::url($user->profile_picture) : asset('default_profile_picture.png') }}"
+                                alt="Profile Picture" class="profile-picture">
+
+                            <form action="{{ route('Shield.profile.update') }}" method="POST"
+                                enctype="multipart/form-data">
+                                @csrf
+                                @method('PUT')
+
+                                <!-- Other input fields -->
+
+                                <div class="form-group">
+                                    <label for="profile_picture">Profile Picture</label>
+                                    <input type="file" name="profile_picture" id="profile_picture"
+                                        class="form-control">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Update Profile</button>
+                            </form>
+
+                            {{-- <div class="p-7">
                                 <form action="#">
                                     <div class="mb-4 flex items-center gap-3">
                                         <div class="h-14 w-14 rounded-full">
@@ -225,7 +249,7 @@
                                         </button>
                                     </div>
                                 </form>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

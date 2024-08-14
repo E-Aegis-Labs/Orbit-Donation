@@ -1,101 +1,56 @@
-<section class="w-full overflow-hidden dark:bg-gray-900">
-    <div class="w-full mx-auto">
-        <!-- User Cover IMAGE -->
-        <img src="https://cdn-0.intosafaris.com/wp-content/uploads/2020/06/Kalahari-Desert-41.jpg?ezimgfmt=rs%3Adevice%2Frscb4-1" alt="User Cover"
-                class="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] xs:h-[9.5rem]" />
+<section class="w-full overflow-hidden dark:bg-gray-900 font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover">
 
-        <!-- User Profile Image -->
-        <div class="w-full mx-auto flex justify-center">
-            <img src="https://i.pinimg.com/originals/5d/7e/8f/5d7e8f3405b400630f376d3c738bf896.jpg" alt="User Profile"
-                    class="rounded-full object-cover xl:w-[16rem] xl:h-[16rem] lg:w-[16rem] lg:h-[16rem] md:w-[12rem] md:h-[12rem] sm:w-[10rem] sm:h-[10rem] xs:w-[8rem] xs:h-[8rem] outline outline-2 outline-offset-2 outline-yellow-500 shadow-xl relative xl:bottom-[7rem] lg:bottom-[8rem] md:bottom-[6rem] sm:bottom-[5rem] xs:bottom-[4.3rem]" />
+    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+
+        <!--Main Col-->
+        <div id="profile"
+            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+
+
+            <div class="p-4 md:p-12 text-center lg:text-left">
+                <!-- Image for mobile view-->
+                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                    style="background-image: url('https://telegra.ph/file/10de92fcc7e777fe4e74b.jpg')"></div>
+
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Your Name</h1>
+                <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+                <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+                    <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                    </svg> What you do
+                </p>
+                <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+                    <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
+                    </svg> Your Location - 25.0000° N, 71.0000° W
+                </p>
+                <p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
+
+                <div class="pt-12 pb-8">
+                    <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+				         Edit Profle
+				     </button>
+                </div>
+
+
+
+                <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
+
+            </div>
+
         </div>
 
-        <div
-            class="xl:w-[80%] lg:w-[90%] md:w-[94%] sm:w-[96%] xs:w-[92%] mx-auto flex flex-col gap-4 justify-center items-center relative xl:-top-[6rem] lg:-top-[6rem] md:-top-[4rem] sm:-top-[3rem] xs:-top-[2.2rem]">
-            <!-- FullName -->
-            <h1 class="text-center text-gray-800 dark:text-white text-4xl font-serif">Samuel Abera</h1>
-            <div class="profile">
+        <!--Img Col-->
+        <div class="w-full lg:w-2/5">
+            <!-- Big profile image for side bar (desktop) -->
+            <img src="https://telegra.ph/file/10de92fcc7e777fe4e74b.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+            <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
 
-               
-            </div>
-            
-            <!-- About -->
-            <p class="w-full text-gray-700 dark:text-gray-400 text-md text-pretty sm:text-center xs:text-justify">Lorem, ipsum dolor sit amet
-
-                praesentium?</p>
-
-            <!-- Social Links -->
-            <div
-                class="px-2 flex rounded-sm bg-gray-200 text-gray-500 dark:bg-gray-700 dark:bg-opacity-30 dark:text-gray-700 hover:text-gray-600 hover:dark:text-gray-400">
-                <a href="https://www.linkedin.com/in/samuel-abera-6593a2209/">
-                    <div data-title="LinkedIn" class="p-2 hover:text-primary hover:dark:text-primary">
-                        <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                                clip-rule="evenodd" />
-                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
-                        </svg>
-
-                    </div>
-                </a>
-                <a href="https://twitter.com/Samuel7Abera7">
-                    <div data-title="X" class="p-2 hover:text-primary hover:dark:text-primary">
-                        <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
-                        </svg>
-
-                    </div>
-                </a>
-                <a href="">
-                    <div data-title="Facebook" class="p-2 hover:text-blue-500 hover:dark:text-blue-500">
-                        <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
-                                clip-rule="evenodd" />
-                        </svg>
-
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/@silentcoder7">
-                    <div data-title="Youtube" class="p-2 hover:text-primary hover:dark:text-primary">
-                        <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Cards -->
-            <div class="w-full flex gap-4 justify-center items-center mt-10">
-                <!-- 1 -->
-                <div
-                    class="xl:w-1/4 xl:h-32 lg:w-1/5 lg:h-32 md:w-1/5 md:h-28 sm:w-1/3 sm:h-[5rem] xs:w-1/3 xs:h-[4rem] flex justify-center items-center rounded-sm text-center text-lg px-6 py-4 border-2 border-dashed border-gray-300 dark:text-white dark:border-2 dark:border-dashed dark:border-gray-700">
-                    27
-                </div>
-
-                <!-- 2 -->
-                <div
-                    class="xl:w-1/4 xl:h-32 lg:w-1/5 lg:h-32 md:w-1/5 md:h-28 sm:w-1/3 sm:h-[5rem] xs:w-1/3 xs:h-[4rem] flex justify-center items-center rounded-sm text-center text-lg px-6 py-4 border-2 border-dashed border-gray-300 dark:text-white dark:border-2 dark:border-dashed dark:border-gray-700">
-                    777
-                </div>
-
-                <!-- 3 -->
-                <div
-                    class="xl:w-1/4 xl:h-32 lg:w-1/5 lg:h-32 md:w-1/5 md:h-28 sm:w-1/3 sm:h-[5rem] xs:w-1/3 xs:h-[4rem] flex justify-center items-center rounded-sm text-center text-lg px-6 py-4 border-2 border-dashed border-gray-300 dark:text-white dark:border-2 dark:border-dashed dark:border-gray-700">
-                    34
-                </div>
-            </div>
         </div>
     </div>
+    
 </section>

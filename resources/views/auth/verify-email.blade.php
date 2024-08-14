@@ -1,6 +1,11 @@
+@extends('view.layouts.app')
+
+@section('main_content')
+
+
 <x-guest-layout>
     <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
+        {{ __('Welcome aboard! To confirm your journey with us, please verify your email address by clicking the link in the email we just sent. Need another? Simply let us know.') }}
     </div>
 
     @if (session('status') == 'verification-link-sent')
@@ -29,3 +34,8 @@
         </form>
     </div>
 </x-guest-layout>
+
+
+
+
+
