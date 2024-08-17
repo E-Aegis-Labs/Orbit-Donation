@@ -152,3 +152,27 @@ window.addEventListener('scroll', function() {
             }
         }
     });
+
+        $(document).ready(function () {
+            // Register the plugins
+            FilePond.registerPlugin(
+                FilePondPluginImagePreview,
+                FilePondPluginFileValidateSize,
+                FilePondPluginFileValidateType
+            );
+  
+            // Turn all file input elements into ponds
+            $('.filepond').filepond();
+  
+            // Set FilePond options
+            FilePond.setOptions({
+                server: {
+                    url: '/upload',
+                    process: '/process',
+                    revert: '/revert',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    }
+                }
+            });
+        });

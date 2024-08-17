@@ -3,76 +3,184 @@
 
 @section('main_content')
     {{-- -- ====== Hero Section Start  --}}
-    <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="absolute inset-0 bg-cover bg-center"
-            style="background-image: url('https://telegra.ph/file/bbd5287058f5c07707ab4.jpg');"></div>
 
-        <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <!-- Left Side: Company Info -->
-                <div class="w-full md:w-1/2 mb-12 md:mb-0">
-                    <h3 class="text-2xl sm:text-5xl font-bold mb-2 leading-tight">
-                        Innovate.<br>Transform.<br>Succeed.
-                    </h3>
-                    <p class="text-xl mb-8 text-gray-300">Empowering businesses with cutting-edge solutions for a digital
-                        future.</p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#"
-                            class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get
-                            Started</a>
-                        <a href="#"
-                            class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Start
-                            Today</a>
-                    </div>
-                </div>
 
-                <!-- Right Side: Features -->
-                <div class="w-full md:w-1/2 md:pl-12">
-                    <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-                        <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                </svg>
-                                <span>Lightning-fast Performance</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                    </path>
-                                </svg>
-                                <span>Bank-grade Security</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                                    </path>
-                                </svg>
-                                <span>AI-powered Insights</span>
-                            </li>
-                        </ul>
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-70 overflow-hidden rounded-lg md:h-96">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('https://telegra.ph/file/bbd5287058f5c07707ab4.jpg');"></div>
+            
+                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <!-- Left Side: Company Info -->
+                            <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                                <h3 class="text-2xl sm:text-2xl font-bold mb-2 leading-tight">
+                                    Innovate.<br>Transform.<br>Succeed.
+                                </h3>
+                                <p class="text-xl mb-8 text-gray-300">Empowering businesses with .</p>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                    <a href="#"
+                                        class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get
+                                        Started</a>
+                                    <a href="#"
+                                        class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Start
+                                        Today</a>
+                                </div>
+                            </div>
+            
+                            <!-- Right Side: Features -->
+                            <div class="w-full md:w-1/2 md:pl-12">
+                                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+                                    <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                            </svg>
+                                            <span>Lightning-fast Performance</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                                </path>
+                                            </svg>
+                                            <span>Bank-grade Security</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                                </path>
+                                            </svg>
+                                            <span>AI-powered Insights</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+            
+                    <!-- Decorative Element -->
+                    <div class="absolute bottom-0 left-0 right-0">
+                        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                                fill="green" />
+                        </svg>
+                    </div>
+                </section>
             </div>
-        </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('https://telegra.ph/file/bbd5287058f5c07707ab4.jpg');"></div>
+            
+                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <!-- Left Side: Company Info -->
+                            <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                                <h3 class="text-2xl sm:text-2xl font-bold mb-2 leading-tight">
+                                    Innovate.<br>Transform.<br>Succeed.
+                                </h3>
+                                <p class="text-xl mb-8 text-gray-300">Empowering businesses </p>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                    <a href="#"
+                                        class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get
+                                        Started</a>
+                                    <a href="#"
+                                        class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Start
+                                        Today</a>
+                                </div>
+                            </div>
+            
+                            <!-- Right Side: Features -->
+                            <div class="w-full md:w-1/2 md:pl-12">
+                                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+                                    <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                            </svg>
+                                            <span>Lightning-fast Performance</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                                </path>
+                                            </svg>
+                                            <span>Bank-grade Security</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                                </path>
+                                            </svg>
+                                            <span>AI-powered Insights</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Decorative Element -->
+                    <div class="absolute bottom-0 left-0 right-0">
+                        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                                fill="green" />
+                        </svg>
+                    </div>
+                </section>
+            </div>
 
-        <!-- Decorative Element -->
-        <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-                    fill="green" />
-            </svg>
         </div>
-    </section>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    
     {{-- -- ====== Hero Section End  --}}
 
     {{-- ====== Features Section Start  --}}

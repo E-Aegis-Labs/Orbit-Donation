@@ -11,4 +11,13 @@
 <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 <!--<< Favicon >>-->
 <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
+<link rel="stylesheet" href="assets/css/animate.css" />
+<link rel="stylesheet" href="assets/css/tailwind.css" />
 
+<!-- ==== WOW JS ==== -->
+<script src="assets/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+  

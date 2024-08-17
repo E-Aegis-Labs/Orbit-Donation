@@ -79,3 +79,18 @@
         },
       });
     </script>
+
+
+
+  <!-- FilePond JS -->
+  <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+  <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- FilePond jQuery adapter -->
+  <script src="{{ asset('node_modules/jquery-filepond/dist/jquery.filepond.js') }}"></script>
+

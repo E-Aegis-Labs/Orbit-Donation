@@ -7,9 +7,9 @@
                       class="py-1 px-1 rounded-xl border w-full bg-gradient-to-r from-emerald-500 via-violet-600 to-emerald-900 header">
                       <!-- Your existing navbar content goes here -->
                       <div class="grid xl:grid-cols-1 grid-cols-1">
-                          <div class="p-5">
+                          <div class="p-1">
                               <div
-                                  class="py-3 px-3 rounded-xl border w-full bg-gradient-to-r from-emerald-500 via-violet-600 to-emerald-900 header">
+                                  class="py-1 px-1 rounded-xl border w-full bg-gradient-to-r from-emerald-500 via-violet-600 to-emerald-900 header">
                                   <div class="flex justify-between items-center">
                                       <div class="flex justify-items-center items-center gap-2">
                                           <div class="lg:hidden">
@@ -31,27 +31,30 @@
                                           </div>
 
 
-                                          <div style="position: relative;">
-                                              <input
-                                                  class="rounded-3xl py-3 px-3 outline-none text-xs w-[350px] pr-10 hidden lg:block md:block"
-                                                  placeholder="Search for Grocery, Stores, Vegetable, or Meat">
-                                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                  stroke-width="1.5" stroke="currentColor"
-                                                  class="w-5 h-5 text-green-900 absolute right-3 top-1/2 transform -translate-y-1/2 hidden lg:block md:block">
-                                                  <path stroke-linecap="round" stroke-linejoin="round"
-                                                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                                              </svg>
-                                          </div>
+
 
                                       </div>
                                       <ul
                                           class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
 
-                                          <li>
 
+                                          <li class="group relative">
+                                              <a href="blog-grids.html"
+                                                  class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                                                  Blog
+                                              </a>
                                           </li>
-                                      </ul>
 
+
+
+                                          <li class="group relative">
+                                              <a href="{{ route('view.layouts.UI.contact') }}"
+                                                  class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
+                                                  ContactUs
+                                              </a>
+                                          </li>
+
+                                      </ul>
 
                                       <div class="hidden lg:flex">
 
@@ -126,7 +129,7 @@
           class="fixed bg-white dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto">
 
           <div class="flex items-center mb-8">
-       
+
 
               <button class="navbar-close">
                   <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -158,7 +161,7 @@
 
               <div class="pt-6">
                   <button id="theme-toggle-2" type="button"
-                      class=" py-2.5 w-[97.6%] mb-3 rounded-xl flex justify-center align-middle py-1.5 px-3 m-1 text-center bg-gray-100 border border-gray-300 rounded-md text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
+                      class=" py-2.5 w-[97.6%] mb-3 rounded-xl flex justify-center align-middle px-3 m-1 text-center bg-gray-100 border border-gray-300 text-black  hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700">
                       <svg id="theme-toggle-dark-icon-2" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20"
                           xmlns="http://www.w3.org/2000/svg">
                           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -170,7 +173,7 @@
                               fill-rule="evenodd" clip-rule="evenodd"></path>
                       </svg>
                   </button>
-{{-- 
+                  {{-- 
          sigin in & login buttons  --}}
 
               </div>

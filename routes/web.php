@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 
 use App\Http\Controllers\Shield\ShieldController;
+use App\Http\Controllers\Shield\ShieldSliderController;
 use App\Http\Controllers\UserPanel\UserPanelController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,9 +49,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
         [ShieldController::class, 'updatePassword']
     )->name('Shield.profile.update-password');
 
-
-
-
+    // New profile route
+    Route::get(
+        '/' . config('app.shield_route_prefix') . '/slider',
+        [ShieldSliderController::class, 'index']
+    )->name('Shield.slider.index');
+    Route::get(
+        '/' . config('app.shield_route_prefix') . '/slider/create',
+        [ShieldSliderController::class, 'create']
+    )->name('Shield.slider.create');
 });
 
 
