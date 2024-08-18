@@ -29,15 +29,13 @@
 
 
 
-                            <button type="button"
-                                class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 me-2 mb-2">
-                                Featured Donations
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path fill="#00ff1e"
-                                        d="M11 9V5H9v4H5v2h4v4h2v-4h4V9zm-1 11a10 10 0 1 1 0-20a10 10 0 0 1 0 20" />
-                                </svg>
-
-                            </button>
+                            <a href="{{ url(config('app.shield_route_prefix') . '/slider/create') }}">
+                                <button type="button"
+                                    class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 me-2 mb-2">
+                                    Featured Donations
+                                </button>
+                            </a>
+                            
 
                         </div>
                         <label for="table-search" class="sr-only">Search</label>
@@ -60,16 +58,16 @@
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
-                                    Product name
+                                    No
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Color
+                                    Image
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Category
+                                    Title
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Price
+                                    Description
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     Action
@@ -78,29 +76,31 @@
                         </thead>
                         <tbody>
                             @foreach ($sliders as $slider)
-                                <tr
-                                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-
+                                <tr class=" border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <td class="p-4">
                                         {{ $loop->iteration }}
                                     </td>
                                     <td class="px-6 py-4">
-                                        <img src="{{ asset('uploads/' . $slider->photo) }}"
-                                            class="w-16 md:w-32 max-w-full max-h-full" alt="Orbit Donate">
+                                        @if (file_exists(public_path('uploads/' . $slider->image)))
+                                            <img src="{{ asset('uploads/' . $slider->image) }}"
+                                                class="w-16 md:w-32 max-w-full max-h-full" alt="Slider Image">
+                                        @else
+                                            <span class="text-red-500">Image not found</span>
+                                        @endif
                                     </td>
                                     <td class="px-6 py-4">
                                         {{ $slider->heading }}
                                     </td>
                                     <td class="px-6 py-4">
-                                        {{ $slider->sub_heading }}
+                                        {{ $slider->content }}
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
+                        
                     </table>
                 </div>
 

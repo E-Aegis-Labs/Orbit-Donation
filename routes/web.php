@@ -25,40 +25,63 @@ require __DIR__ . '/auth.php';
 
 
 
-Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get(
-        '/' . config('app.shield_route_prefix') . '/dashboard',
-        [ShieldController::class, 'index']
-    )->name('Shield.dashboard');
+// Route::middleware(['auth', 'role:admin'])->group(function () {
+//     Route::get(
+//         '/' . config('app.shield_route_prefix') . '/dashboard',
+//         [ShieldController::class, 'index']
+//     )->name('Shield.dashboard');
 
-    // New profile route
-    Route::get(
-        '/' . config('app.shield_route_prefix') . '/profile',
-        [ShieldController::class, 'show']
-    )->name('Shield.profile');
+//     // New profile route
+//     Route::get(
+//         '/' . config('app.shield_route_prefix') . '/profile',
+//         [ShieldController::class, 'show']
+//     )->name('Shield.profile');
 
-    // Update profile route
-    Route::put(
-        '/' . config('app.shield_route_prefix') . '/profile/update',
-        [ShieldController::class, 'updateProfile']
-    )->name('Shield.profile.update');
+//     // Update profile route
+//     Route::put(
+//         '/' . config('app.shield_route_prefix') . '/profile/update',
+//         [ShieldController::class, 'updateProfile']
+//     )->name('Shield.profile.update');
 
-    // Update password route
-    Route::put(
-        '/' . config('app.shield_route_prefix') . '/profile/update-password',
-        [ShieldController::class, 'updatePassword']
-    )->name('Shield.profile.update-password');
+//     // Update password route
+//     Route::put(
+//         '/' . config('app.shield_route_prefix') . '/profile/update-password',
+//         [ShieldController::class, 'updatePassword']
+//     )->name('Shield.profile.update-password');
 
-    // New profile route
-    Route::get(
-        '/' . config('app.shield_route_prefix') . '/slider',
-        [ShieldSliderController::class, 'index']
-    )->name('Shield.slider.index');
-    Route::get(
-        '/' . config('app.shield_route_prefix') . '/slider/create',
-        [ShieldSliderController::class, 'create']
-    )->name('Shield.slider.create');
+//     // New profile route
+//     Route::get(
+//         '/' . config('app.shield_route_prefix') . '/slider',
+//         [ShieldSliderController::class, 'index']
+//     )->name('Shield.slider.index');
+//     Route::get(
+//         '/' . config('app.shield_route_prefix') . '/slider/create',
+//         [ShieldSliderController::class, 'create']
+//     )->name('Shield.slider.create');
+//     Route::post(
+//         '/' . config('app.shield_route_prefix') . '/slider/store',
+//         [ShieldSliderController::class, 'store']
+//     )->name('Shield.slider.store');
+// });
+
+Route::middleware(['auth', 'role:admin'])->prefix(config('app.shield_route_prefix'))->group(function () {
+    Route::get('/dashboard', [ShieldController::class, 'index'])->name('Shield.dashboard');
+
+    // Profile routes
+    Route::prefix('profile')->group(function () {
+        Route::get('/', [ShieldController::class, 'show'])->name('Shield.profile');
+        Route::put('/update', [ShieldController::class, 'updateProfile'])->name('Shield.profile.update');
+        Route::put('/update-password', [ShieldController::class, 'updatePassword'])->name('Shield.profile.update-password');
+    });
+
+    // Slider routes
+    Route::prefix('slider')->group(function () {
+        Route::get('/', [ShieldSliderController::class, 'index'])->name('Shield.slider.index');
+        Route::get('/create', [ShieldSliderController::class, 'create'])->name('Shield.slider.create');
+        Route::post('/store', [ShieldSliderController::class, 'store'])->name('Shield.slider.store');
+    });
 });
+
 
 
 //volunteer dashboard
