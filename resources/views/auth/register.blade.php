@@ -3,7 +3,7 @@
 @section('main_content')
     <section>
         <div class="w-full mx-auto max-w-xl flex flex-col justify-center py-24 relative p-8">
-            <div class="mt-6 border-t pt-12">
+
                 <!--  Starts component -->
                 <div x-data="{ registerName: '', registerEmail: '', registerPassword: '', passwordPattern: /^(?=.*[A-Z])(?=.*\W).+$/, showPassword: false }">
                     <form method="POST" action="{{ route('register') }}" class="w-full divide-neutral-200 rounded-3xl bg-white shadow-2xl border p-8 lg:p-10">
@@ -94,7 +94,7 @@
                     </form>
                 </div>
                 <!--  Ends component -->
-            </div>
+
         </div>
     </section>
 @endsection

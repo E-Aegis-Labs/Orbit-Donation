@@ -3,23 +3,23 @@
 use App\Http\Controllers\ProfileController;
 
 use App\Http\Controllers\Shield\ShieldController;
-use App\Http\Controllers\Shield\ShieldSliderController;
-use App\Http\Controllers\UserPanel\UserPanelController;
+use App\Http\Controllers\Shield\SliderController;
+use App\Http\Controllers\UserPanel\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [UserPanelController::class, 'index'])->name('home');
-Route::get('/donation-details', [UserPanelController::class, 'donate'])->name('view.layouts.UI.show');
-Route::get('/contact', [UserPanelController::class, 'contact'])->name('view.layouts.UI.contact');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/donate', [HomeController::class, 'donate'])->name('view.layouts.UI.show');
+Route::get('/contact', [HomeController::class, 'contact'])->name('view.layouts.UI.contact');
 
-Route::get('/dashboard', [UserPanelController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
 
 require __DIR__ . '/auth.php';
 
@@ -52,15 +52,15 @@ require __DIR__ . '/auth.php';
 //     // New profile route
 //     Route::get(
 //         '/' . config('app.shield_route_prefix') . '/slider',
-//         [ShieldSliderController::class, 'index']
+//         [SliderController::class, 'index']
 //     )->name('Shield.slider.index');
 //     Route::get(
 //         '/' . config('app.shield_route_prefix') . '/slider/create',
-//         [ShieldSliderController::class, 'create']
+//         [SliderController::class, 'create']
 //     )->name('Shield.slider.create');
 //     Route::post(
 //         '/' . config('app.shield_route_prefix') . '/slider/store',
-//         [ShieldSliderController::class, 'store']
+//         [SliderController::class, 'store']
 //     )->name('Shield.slider.store');
 // });
 
@@ -76,18 +76,25 @@ Route::middleware(['auth', 'role:admin'])->prefix(config('app.shield_route_prefi
 
     // Slider routes
     Route::prefix('slider')->group(function () {
-        Route::get('/', [ShieldSliderController::class, 'index'])->name('Shield.slider.index');
-        Route::get('/create', [ShieldSliderController::class, 'create'])->name('Shield.slider.create');
-        Route::post('/store', [ShieldSliderController::class, 'store'])->name('Shield.slider.store');
+        Route::get('/', [SliderController::class, 'index'])->name('Shield.slider.index');
+        Route::get('/create', [SliderController::class, 'create'])->name('Shield.slider.create');
+        Route::post('/store', [SliderController::class, 'store'])->name('Shield.slider.store');
+    
+        Route::get('/edit/{id}', [SliderController::class, 'edit'])->name('shield.slider.edit');
+        Route::post('/update/{id}', [SliderController::class, 'update'])->name('Shield.slider.update');
+        Route::get('/destroy/{id}', [SliderController::class, 'destroy'])->name('shield.slider.destroy');
     });
 });
 
 
+Route::middleware(['auth', 'role:volunteer'])
+    ->prefix(config('app.user_route_prefix'))
+    ->group(function () {
+        // Volunteer dashboard
+        Route::get('/dashboard', [HomeController::class, 'show'])->name('User.dashboard');
 
-//volunteer dashboard
-Route::middleware(['auth', 'role:volunteer'])->group(function () {
-    Route::get(
-        '/' . config('app.user_route_prefix') . '/dashboard',
-        [UserPanelController::class, 'show']
-    )->name('User.dashboard');
-});
+        // Profile routes
+        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    });

@@ -1,5 +1,5 @@
 <aside :class="sidebarToggle ? 'translate-x-0' : '-translate-x-full'"
-    class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0"
+    class="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden duration-300 ease-linear  lg:static lg:translate-x-0"
     @click.outside="sidebarToggle = false">
 
     <div class="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
@@ -26,7 +26,7 @@
 
                         <li>
                             <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-blue-900 hover:bg-gray-100 dark:hover:bg-gray-700 group">
 
                                 <span class="flex-1 ms-3 whitespace-nowrap"></span>
 
@@ -37,7 +37,7 @@
 
                         <li>
                             <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-blue-900 hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#00ff1e" d="M13.45 2.533a2.25 2.25 0 0 0-2.9 0L3.8 8.228a2.25 2.25 0 0 0-.8 1.72v9.305c0 .966.784 1.75 1.75 1.75h8.617l-2.063-2.136c-1.48-1.532-1.696-3.857-.668-5.62a4.57 4.57 0 0 1 1.924-1.8a4.4 4.4 0 0 1 4.44.337a4.4 4.4 0 0 1 4-.523V9.947a2.25 2.25 0 0 0-.8-1.72zm8.527 15.64c1.364-1.412 1.364-3.702 0-5.114a3.6 3.6 0 0 0-.476-.413a3.406 3.406 0 0 0-4.465.413h-.072A3.41 3.41 0 0 0 13 12.346a3.57 3.57 0 0 0-1.5 1.404c-.81 1.39-.636 3.223.523 4.423l4.442 4.598a.74.74 0 0 0 1.07 0z"/></svg>
                                 <span class="ms-3">Dashboard</span>
                             </a>
@@ -45,7 +45,7 @@
 
                         <li>
                             <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-blue-900 hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#00ff1e" d="M13.45 2.533a2.25 2.25 0 0 0-2.9 0L3.8 8.228a2.25 2.25 0 0 0-.8 1.72v9.305c0 .966.784 1.75 1.75 1.75h8.617l-2.063-2.136c-1.48-1.532-1.696-3.857-.668-5.62a4.57 4.57 0 0 1 1.924-1.8a4.4 4.4 0 0 1 4.44.337a4.4 4.4 0 0 1 4-.523V9.947a2.25 2.25 0 0 0-.8-1.72zm8.527 15.64c1.364-1.412 1.364-3.702 0-5.114a3.6 3.6 0 0 0-.476-.413a3.406 3.406 0 0 0-4.465.413h-.072A3.41 3.41 0 0 0 13 12.346a3.57 3.57 0 0 0-1.5 1.404c-.81 1.39-.636 3.223.523 4.423l4.442 4.598a.74.74 0 0 0 1.07 0z"/></svg>
                                 <span class="ms-3">Dashboard</span>
                             </a>
@@ -53,7 +53,7 @@
 
                         <li>
                             <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-blue-900 hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#00ff1e" d="M13.45 2.533a2.25 2.25 0 0 0-2.9 0L3.8 8.228a2.25 2.25 0 0 0-.8 1.72v9.305c0 .966.784 1.75 1.75 1.75h8.617l-2.063-2.136c-1.48-1.532-1.696-3.857-.668-5.62a4.57 4.57 0 0 1 1.924-1.8a4.4 4.4 0 0 1 4.44.337a4.4 4.4 0 0 1 4-.523V9.947a2.25 2.25 0 0 0-.8-1.72zm8.527 15.64c1.364-1.412 1.364-3.702 0-5.114a3.6 3.6 0 0 0-.476-.413a3.406 3.406 0 0 0-4.465.413h-.072A3.41 3.41 0 0 0 13 12.346a3.57 3.57 0 0 0-1.5 1.404c-.81 1.39-.636 3.223.523 4.423l4.442 4.598a.74.74 0 0 0 1.07 0z"/></svg>
                                 <span class="ms-3">Dashboard</span>
                             </a>
@@ -61,7 +61,7 @@
 
                         <li>
                             <button type="button"
-                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-blue-900 dark:hover:bg-gray-700"
                                 aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="#00ff1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.29 20.977c-.818.132-1.724-.3-1.965-1.294a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37c1 .608 2.296.07 2.572-1.065c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c.983.238 1.416 1.126 1.298 1.937M16 19a3 3 0 1 0 6 0a3 3 0 1 0-6 0m1 2l4-4"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/></g></svg>
                                 <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Settings</span>
@@ -70,7 +70,7 @@
                             <ul id="dropdown-example" class="hidden py-2 space-y-2">
                                 <li>
                                     <a href="{{ url(config('app.shield_route_prefix') . '/slider') }}"
-                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-blue-900 dark:hover:bg-gray-700">
 
                                         Featured
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
@@ -82,18 +82,18 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-blue-900 dark:hover:bg-gray-700">Billing</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-blue-900 dark:hover:bg-gray-700">Invoice</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-blue-900 hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#00ff1e" d="M13.45 2.533a2.25 2.25 0 0 0-2.9 0L3.8 8.228a2.25 2.25 0 0 0-.8 1.72v9.305c0 .966.784 1.75 1.75 1.75h8.617l-2.063-2.136c-1.48-1.532-1.696-3.857-.668-5.62a4.57 4.57 0 0 1 1.924-1.8a4.4 4.4 0 0 1 4.44.337a4.4 4.4 0 0 1 4-.523V9.947a2.25 2.25 0 0 0-.8-1.72zm8.527 15.64c1.364-1.412 1.364-3.702 0-5.114a3.6 3.6 0 0 0-.476-.413a3.406 3.406 0 0 0-4.465.413h-.072A3.41 3.41 0 0 0 13 12.346a3.57 3.57 0 0 0-1.5 1.404c-.81 1.39-.636 3.223.523 4.423l4.442 4.598a.74.74 0 0 0 1.07 0z"/></svg>
                                 <span class="ms-3">Dashboard</span>
                             </a>

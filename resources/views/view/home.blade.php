@@ -8,180 +8,99 @@
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-70 overflow-hidden rounded-lg md:h-96">
-             <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
-                    <div class="absolute inset-0 bg-black opacity-50"></div>
-                    <div class="absolute inset-0 bg-cover bg-center"
-                        style="background-image: url('https://telegra.ph/file/bbd5287058f5c07707ab4.jpg');"></div>
-            
-                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
-                        <div class="flex flex-col md:flex-row items-center justify-between">
-                            <!-- Left Side: Company Info -->
-                            <div class="w-full md:w-1/2 mb-12 md:mb-0">
-                                <h3 class="text-2xl sm:text-2xl font-bold mb-2 leading-tight">
-                                    Innovate.<br>Transform.<br>Succeed.
-                                </h3>
-                                <p class="text-xl mb-8 text-gray-300">Empowering businesses with .</p>
-                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                                    <a href="#"
-                                        class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get
-                                        Started</a>
-                                    <a href="#"
-                                        class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Start
-                                        Today</a>
-                                </div>
-                            </div>
-            
-                            <!-- Right Side: Features -->
-                            <div class="w-full md:w-1/2 md:pl-12">
-                                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-                                    <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
-                                    <ul class="space-y-4">
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                            </svg>
-                                            <span>Lightning-fast Performance</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                                </path>
-                                            </svg>
-                                            <span>Bank-grade Security</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                                                </path>
-                                            </svg>
-                                            <span>AI-powered Insights</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Decorative Element -->
-                    <div class="absolute bottom-0 left-0 right-0">
-                        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-                                fill="green" />
-                        </svg>
-                    </div>
-                </section>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
-                    <div class="absolute inset-0 bg-black opacity-50"></div>
-                    <div class="absolute inset-0 bg-cover bg-center"
-                        style="background-image: url('https://telegra.ph/file/bbd5287058f5c07707ab4.jpg');"></div>
-            
-                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
-                        <div class="flex flex-col md:flex-row items-center justify-between">
-                            <!-- Left Side: Company Info -->
-                            <div class="w-full md:w-1/2 mb-12 md:mb-0">
-                                <h3 class="text-2xl sm:text-2xl font-bold mb-2 leading-tight">
-                                    Innovate.<br>Transform.<br>Succeed.
-                                </h3>
-                                <p class="text-xl mb-8 text-gray-300">Empowering businesses </p>
-                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                                    <a href="#"
-                                        class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Get
-                                        Started</a>
-                                    <a href="#"
-                                        class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">Start
-                                        Today</a>
-                                </div>
-                            </div>
-            
-                            <!-- Right Side: Features -->
-                            <div class="w-full md:w-1/2 md:pl-12">
-                                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-                                    <h2 class="text-2xl font-semibold mb-6">Why MyCompany?</h2>
-                                    <ul class="space-y-4">
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-yellow-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                            </svg>
-                                            <span>Lightning-fast Performance</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-green-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                                </path>
-                                            </svg>
-                                            <span>Bank-grade Security</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <svg class="w-6 h-6 mr-3 text-purple-400" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                                                </path>
-                                            </svg>
-                                            <span>AI-powered Insights</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Decorative Element -->
-                    <div class="absolute bottom-0 left-0 right-0">
-                        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-                                fill="green" />
-                        </svg>
-                    </div>
-                </section>
-            </div>
 
+        
+            @foreach($slider as $slide)
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black opacity-50"></div>
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            style=" background-image: url('{{ asset('uploads/'.$slide->image) }}');">
+                        </div>
+                        <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                            <div class="flex flex-col md:flex-row items-center justify-between">
+                                <!-- Left Side: Company Info -->
+                                <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                                    <h3 class="text-2xl sm:text-2xl font-bold mb-2 leading-tight">
+                                        {{ $slide->heading }}
+                                    </h3>
+                                    <p class="text-xl mb-8 text-gray-300">
+                                        {!! $slide->content !!}
+                                    </p>
+                                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                        <a href="{{ $slide->button_link }}"
+                                            class="bg-gradient-to-r from-purple-500 to-purple-900 text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">
+                                            {{ $slide->button_text }}
+                                        </a>
+                                        <a href="#"
+                                            class="bg-gradient-to-tr from-emerald-500 to-emerald-900 text-green-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-100 transition duration-300 text-center">
+                                            Video
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Decorative Element -->
+                        <div class="absolute bottom-0 left-0 right-0">
+                            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                                    fill="green" />
+                            </svg>
+                        </div>
+                    </section>
+                </div>
+            @endforeach
         </div>
+
         <!-- Slider indicators -->
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
         </div>
         <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
                 </svg>
                 <span class="sr-only">Previous</span>
             </span>
         </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
                 </svg>
                 <span class="sr-only">Next</span>
             </span>
         </button>
     </div>
-    
+
     {{-- -- ====== Hero Section End  --}}
+
 
     {{-- ====== Features Section Start  --}}
     <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
@@ -1360,218 +1279,55 @@
     {{-- ====== Team Section End  --}}
 
     {{-- ====== Blog Section Start  --}}
-    <section class="  dark:bg-dark ">
-        <div class="relative pt-2 lg:pt-2 min-h-screen">
+    <div class=" dark:bg-dark w-full">
 
-            <div class="bg-cover w-full flex justify-center items-center"
-                style="background-image: url('/images/mybackground.jpeg');">
-                <div class="w-full  p-5  bg-opacity-40 backdrop-filter backdrop-blur-lg">
-                    <div class="w-12/12 mx-auto rounded-2xl  p-5 bg-opacity-40 backdrop-filter backdrop-blur-lg">
+        <div class="w-full mx-auto py-10 px-4 md:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <span class="mb-2 block text-lg font-semibold text-primary">
+                    Our Blog News
+                </span>
+            </div>
+            <div class="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-8 auto-rows-fr lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <article
+                    class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                    <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxhaXxlbnwwfDB8fHwxNzEyNzUzMTQ4fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                        alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-center px-2 mx-auto">
+                    <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                        he Future of Artificial
+                        Intelligence: Trends and Challenges
+                    </a>
+                </article>
+                <article
+                    class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                    <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxibG9jayUyMGNoYWlufGVufDB8MHx8fDE3MTI3NTMxNjd8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                        alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
 
-                            <article
-                                class="  p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
-                                <a target="_self" href="/blog/slug"
-                                    class="absolute opacity-0 top-0 right-0 left-0 bottom-0"></a>
-                                <div class="relative mb-4 rounded-2xl">
-                                    <img class="max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                        src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                        alt="">
-                                    <div
-                                        class="absolute bottom-3 left-3 inline-flex items-center rounded-lg  p-2 shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="h-5 w-5 text-red-700">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                        </svg>
-                                        <span class="ml-1 text-sm text-slate-400">2</span>
+                    <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                        he Rise of Blockchain Technology:
+                        A Comprehensive Guide
+                    </a>
+                </article>
+                <article
+                    class="relative flex flex-col justify-end px-4 pt-40 pb-4 overflow-hidden bg-gray-900 md:pt-28 isolate rounded-xl dark:shadow dark:shadow-gray-400/50">
+                    <img src="https://images.unsplash.com/photo-1666112835156-c65bb806ac73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfDB8fHwxNzEyNzUzMTk2fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                        alt="" class="absolute inset-0 object-cover w-full h-full -z-10">
+                    <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                    <div class="absolute inset-0 -z-10 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
 
-                                    </div>
-
-                                    <a class="flex justify-center items-center bg-gray-400 bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100"
-                                        href="/blog/slug" target="_self" rel="noopener noreferrer">
-                                        Read article
-                                        <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="flex justify-between items-center w-full pb-4 mb-auto">
-                                    <div class="flex items-center">
-                                        <div class="pr-3">
-                                            <img class="h-12 w-12 rounded-full object-cover"
-                                                src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="">
-                                        </div>
-                                        <div class="flex flex-1">
-                                            <div class="">
-                                                <p class="text-sm font-semibold ">Morris Muthigani</p>
-                                                <p class="text-sm text-gray-500">Published on 19/03/2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end">
-                                        <div class="text-sm flex items-center text-gray-500 ">
-                                            2 Days ago
-                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="font-medium text-xl leading-8">
-                                    <a href="/blog/slug"
-                                        class="block relative group-hover:text-red-700 transition-colors duration-200 ">
-                                        Instant Help at Your Fingertips
-                                    </a>
-                                </h3>
-                                <div>
-                                </div>
-                            </article>
-
-                            <article
-                                class="  p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
-                                <a target="_self" href="/blog/slug"
-                                    class="absolute opacity-0 top-0 right-0 left-0 bottom-0"></a>
-                                <div class="relative mb-4 rounded-2xl">
-                                    <img class="max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                        src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                        alt="">
-                                    <div
-                                        class="absolute bottom-3 left-3 inline-flex items-center rounded-lg  p-2 shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="h-5 w-5 text-red-700">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                        </svg>
-                                        <span class="ml-1 text-sm text-slate-400">2</span>
-
-                                    </div>
-
-                                    <a class="flex justify-center items-center bg-gray-400 bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100"
-                                        href="/blog/slug" target="_self" rel="noopener noreferrer">
-                                        Read article
-                                        <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="flex justify-between items-center w-full pb-4 mb-auto">
-                                    <div class="flex items-center">
-                                        <div class="pr-3">
-                                            <img class="h-12 w-12 rounded-full object-cover"
-                                                src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="">
-                                        </div>
-                                        <div class="flex flex-1">
-                                            <div class="">
-                                                <p class="text-sm font-semibold ">Morris Muthigani</p>
-                                                <p class="text-sm text-gray-500">Published on 19/03/2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end">
-                                        <div class="text-sm flex items-center text-gray-500 ">
-                                            2 Days ago
-                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="font-medium text-xl leading-8">
-                                    <a href="/blog/slug"
-                                        class="block relative group-hover:text-red-700 transition-colors duration-200 ">
-                                        Instant Help at Your Fingertips
-                                    </a>
-                                </h3>
-                                <div>
-                                </div>
-                            </article>
-
-                            <article
-                                class="  p-6 mb-6 shadow transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border">
-                                <a target="_self" href="/blog/slug"
-                                    class="absolute opacity-0 top-0 right-0 left-0 bottom-0"></a>
-                                <div class="relative mb-4 rounded-2xl">
-                                    <img class="max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                        src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                        alt="">
-                                    <div
-                                        class="absolute bottom-3 left-3 inline-flex items-center rounded-lg  p-2 shadow-md">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                            class="h-5 w-5 text-red-700">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                        </svg>
-                                        <span class="ml-1 text-sm text-slate-400">2</span>
-
-                                    </div>
-
-                                    <a class="flex justify-center items-center bg-gray-400 bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100"
-                                        href="/blog/slug" target="_self" rel="noopener noreferrer">
-                                        Read article
-                                        <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="flex justify-between items-center w-full pb-4 mb-auto">
-                                    <div class="flex items-center">
-                                        <div class="pr-3">
-                                            <img class="h-12 w-12 rounded-full object-cover"
-                                                src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="">
-                                        </div>
-                                        <div class="flex flex-1">
-                                            <div class="">
-                                                <p class="text-sm font-semibold ">Morris Muthigani</p>
-                                                <p class="text-sm text-gray-500">Published on 19/03/2024</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-end">
-                                        <div class="text-sm flex items-center text-gray-500 ">
-                                            2 Days ago
-                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 class="font-medium text-xl leading-8">
-                                    <a href="/blog/slug"
-                                        class="block relative group-hover:text-red-700 transition-colors duration-200 ">
-                                        Instant Help at Your Fingertips
-                                    </a>
-                                </h3>
-                                <div>
-                                </div>
-                            </article>
-
-                        </div>
-
-                    </div>
-                </div>
+                    <a class="text-lg font-semibold leading-6 text-white hover:text-teal-100" href="">
+                        How Quantum Computing Will
+                        Revolutionize Data Security
+                    </a>
+                </article>
             </div>
         </div>
-    </section>
+
+    </div>
     {{-- ====== Blog Section End  --}}
 
 
@@ -1813,16 +1569,12 @@
             <span class="text-4xl mx-4">Marquee Item 1</span>
             <span class="text-4xl mx-4">Marquee Item 2</span>
             <span class="text-4xl mx-4">Marquee Item 3</span>
-            <span class="text-4xl mx-4">Marquee Item 4</span>
-            <span class="text-4xl mx-4">Marquee Item 5</span>
         </div>
 
         <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
             <span class="text-4xl mx-4">Marquee Item 1</span>
             <span class="text-4xl mx-4">Marquee Item 2</span>
             <span class="text-4xl mx-4">Marquee Item 3</span>
-            <span class="text-4xl mx-4">Marquee Item 4</span>
-            <span class="text-4xl mx-4">Marquee Item 5</span>
         </div>
     </div>
     {{-- Brands Section End --}}
